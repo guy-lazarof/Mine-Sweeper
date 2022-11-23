@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body onload="onInitGame({SIZE: 4, MINES: 2})">
+    <h1>Minesweeper Game</h1>
+    <div class="container">
+      <div class="btns">
+        <button class="levelBtn" onclick="onInitGame({SIZE: 4, MINES: 2})">
+          begginer
+        </button>
+        <button class="levelBtn" onclick="onInitGame({SIZE: 8, MINES: 14})">
+          medium
+        </button>
+        <button class="levelBtn" onclick="onInitGame({SIZE: 12, MINES: 32})">
+          expert
+        </button>
+      </div>
+      <div class="board"></div>
+    </div>
+    <footer></footer>
+    <script src="./js/util (2).mjs"></script>
+    <script src="./js/main.mjs"></script>
+  </body>
+</html>
