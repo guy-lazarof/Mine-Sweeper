@@ -1,3 +1,40 @@
 body {
   background-color: rgb(104, 234, 56);
 }
+
+.cell {
+  width: 30px;
+  height: 30px;
+}
+
+.is-mine {
+  background-color: red;
+  color: blue;
+}
+
+.is-clicked:not(.is-mine) {
+  color: blue;
+  background-color: rgb(196, 196, 196);
+}
+
+.is-marked {
+  background-color: brown;
+}
+
+.is-empty {
+  background-color: rgb(196, 196, 196);
+}
+
+.has-neighbors {
+  /* color: HERE THE COLOR SHOULD CHANGE BY THE NUMBER */
+}
+
+.start-reset-game {
+}
+
+.game-over {
+  color: black;
+  background-color: red;
+  font-size: 24px;
+  font-weight: 700;
+}

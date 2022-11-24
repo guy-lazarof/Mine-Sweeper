@@ -9,19 +9,21 @@
   </head>
   <body onload="onInitGame({SIZE: 4, MINES: 2})">
     <h1>Minesweeper Game</h1>
+    <div class="life-counter"></div>
+    <div class="btns">
+      <button class="levelBtn" onclick="onInitGame({SIZE: 4, MINES: 2})">
+        beginner
+      </button>
+      <button class="levelBtn" onclick="onInitGame({SIZE: 8, MINES: 14})">
+        medium
+      </button>
+      <button class="levelBtn" onclick="onInitGame({SIZE: 12, MINES: 32})">
+        expert
+      </button>
+    </div>
+    <button class="start-reset-game" onclick="resetGame()">:)</button>
     <div class="container">
-      <div class="btns">
-        <button class="levelBtn" onclick="onInitGame({SIZE: 4, MINES: 2})">
-          begginer
-        </button>
-        <button class="levelBtn" onclick="onInitGame({SIZE: 8, MINES: 14})">
-          medium
-        </button>
-        <button class="levelBtn" onclick="onInitGame({SIZE: 12, MINES: 32})">
-          expert
-        </button>
-      </div>
-      <div class="board"></div>
+      <table class="board"></table>
     </div>
     <footer></footer>
     <script src="./js/util (2).mjs"></script>
