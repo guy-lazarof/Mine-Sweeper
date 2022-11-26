@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Minesweeper</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body onload="onInitGame({SIZE: 4, MINES: 2})">
-    <h1>Minesweeper Game</h1>
+  <body onload="onInitGame({SIZE: 4, MINES: 2})" >
+    <div class="game-area">
+      <h1>Minesweeper Game</h1>
+      <div class='header-game'>
+      <div class='timer'>00</div>
     <div class="life-counter"></div>
     <div class="btns">
       <button class="levelBtn" onclick="onInitGame({SIZE: 4, MINES: 2})">
@@ -21,10 +24,16 @@
         expert
       </button>
     </div>
-    <button class="start-reset-game" onclick="resetGame()">:)</button>
+    <div class='div-start-reset-game'>
+    <button class="btn-start-reset-game" onclick="resetGame()"></button> 
+  </div>
+  </div>
+
     <div class="container">
       <table class="board"></table>
     </div>
+  </div>
+  <!-- <button oncontextmenu='rightClick(this)' onclick='rightClick(this)'>iuh</button> -->
     <footer></footer>
     <script src="./js/util (2).mjs"></script>
     <script src="./js/main.mjs"></script>

@@ -1,10 +1,48 @@
 body {
-  background-color: rgb(104, 234, 56);
+  /* background-color: rgb(104, 234, 56); */
+ background: url('../img/images.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex; 
 }
 
+h1{
+  color:rgba(245, 225, 0, 0.636) ;
+  margin: 0;
+}
 .cell {
-  width: 30px;
-  height: 30px;
+  background-color: rgb(229, 222, 133);
+  width: 40px;
+  height: 40px;
+}
+
+.game-area{
+  background-color: rgb(66, 124, 73);
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.board{
+  display: flex;
+  justify-content:space-around
+}
+
+.btns{
+  display: flex;
+  justify-content:space-around
+}
+
+.div-start-reset-game {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-start-reset-game {
 }
 
 .is-mine {
@@ -13,23 +51,41 @@ body {
 }
 
 .is-clicked:not(.is-mine) {
-  color: blue;
-  background-color: rgb(196, 196, 196);
+  color: rgb(255, 187, 0);
+  font-size: 24px;
+  font-weight: 500;
+  background-color: rgb(147, 147, 147);
 }
 
 .is-marked {
-  background-color: brown;
+  background-color: rgb(255, 250, 250);
 }
 
 .is-empty {
-  background-color: rgb(196, 196, 196);
+  
 }
 
 .has-neighbors {
-  /* color: HERE THE COLOR SHOULD CHANGE BY THE NUMBER */
 }
 
-.start-reset-game {
+.header-game{
+  background-color: antiquewhite;
+
+}
+
+.life-counter{
+  color:red;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+.timer{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: blue;
 }
 
 .game-over {
@@ -37,4 +93,8 @@ body {
   background-color: red;
   font-size: 24px;
   font-weight: 700;
+}
+
+.expanding{
+  background-color: aqua;
 }
