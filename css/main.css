@@ -1,11 +1,6 @@
 body {
-  /* background-color: rgb(104, 234, 56); */
- background: url('../img/images.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   display: flex; 
+  background-color: beige;
 }
 
 h1{
@@ -16,15 +11,17 @@ h1{
   background-color: rgb(229, 222, 133);
   width: 40px;
   height: 40px;
+  border-radius: 5px;
 }
 
 .game-area{
   background-color: rgb(66, 124, 73);
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .board{
